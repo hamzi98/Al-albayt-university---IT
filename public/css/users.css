@@ -1,0 +1,184 @@
+.product-grid {
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    padding: 0 0 72px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    overflow: hidden;
+    position: relative;
+    z-index: 1
+}
+
+.product-grid .product-image a {
+    display: block
+}
+
+.product-grid .product-image img {
+    width: 100%;
+    height: auto
+}
+
+.product-grid3 .pic-1 {
+    opacity: 1;
+    transition: all .5s ease-out 0s
+}
+
+.product-grid3:hover .pic-1 {
+    opacity: 0
+}
+
+.product-grid .social li a {
+    color: #fff;
+    background-color: #333;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 2px;
+    display: block;
+    position: relative;
+    transition: all .3s ease-in-out
+}
+
+
+/*******************/
+
+.our-team {
+    padding: 30px 0 40px;
+    margin-bottom: 30px;
+    background-color: #f7f5ec;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+}
+
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+    height: 100%;
+}
+
+.our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #1369ce;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+
+.our-team .title {
+    display: block;
+    font-size: 15px;
+    color: #4e5052;
+    text-transform: capitalize;
+}
+
+.our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #1369ce;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+    bottom: 0;
+}
+
+.our-team .social li {
+    display: inline-block;
+}
+
+.our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+}
+
+.our-team .social li a:hover {
+    color: #1369ce;
+    background-color: #f7f5ec;
+}
+
+
+/** Pagenit*/
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color: #00ACD6 !important;
+    border-color: #00ACD6 !important;
+    border-radius: 50%;
+    padding: 6px 12px;
+}
+
+.page-link {
+    z-index: 3;
+    color: #00ACD6 !important;
+    background-color: #fff;
+    border-color: #007bff;
+    border-radius: 50%;
+    padding: 6px 12px !important;
+}
+
+.page-item:first-child .page-link {
+    border-radius: 30% !important;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 30% !important;
+}
+
+.pagination li {
+    padding: 3px;
+}
+
+.disabled .page-link {
+    color: #212529 !important;
+    opacity: 0.5 !important;
+}
